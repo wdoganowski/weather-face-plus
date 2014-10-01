@@ -1,12 +1,13 @@
 {
   "uuid": "606859d3-0af3-44b7-a63f-17c36e61b26a",
-  "shortName": "weather-face-plus",
-  "longName": "weather-face-plus",
+  "shortName": "Weather+",
+  "longName": "Weather face+",
   "companyName": "Dogan",
   "versionCode": 1,
   "versionLabel": "1.0",
+  "capabilities": ["location"],
   "watchapp": {
-    "watchface": false
+    "watchface": true
   },
  "appKeys": {
     "city": 2,
