@@ -18,6 +18,13 @@
     "media": [
       {
         "type": "png",
+        "name": "IMAGE_ICON",
+        "file": "img/icon.png",
+        "menuIcon": true
+      },
+
+      {
+        "type": "png",
         "name": "IMAGE_BACKGROUND",
         "file": "img/brown_background.png"
       },
