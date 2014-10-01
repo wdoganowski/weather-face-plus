@@ -1,0 +1,352 @@
+@font-face {
+	font-family: "Flaticon";
+	src: url("flaticon.eot");
+	src: url("flaticon.eot#iefix") format("embedded-opentype"),
+	url("flaticon.woff") format("woff"),
+	url("flaticon.ttf") format("truetype"),
+	url("flaticon.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+	font-family: Flaticon;
+        font-size: 20px;
+font-style: normal;
+margin-left: 20px;
+}.flaticon-address10:before {
+	content: "\e000";
+}
+.flaticon-address8:before {
+	content: "\e001";
+}
+.flaticon-alert2:before {
+	content: "\e002";
+}
+.flaticon-alert3:before {
+	content: "\e003";
+}
+.flaticon-arrow113:before {
+	content: "\e004";
+}
+.flaticon-barometer:before {
+	content: "\e005";
+}
+.flaticon-black30:before {
+	content: "\e006";
+}
+.flaticon-brolly:before {
+	content: "\e007";
+}
+.flaticon-circular14:before {
+	content: "\e008";
+}
+.flaticon-clear3:before {
+	content: "\e009";
+}
+.flaticon-cloud15:before {
+	content: "\e00a";
+}
+.flaticon-cloud22:before {
+	content: "\e00b";
+}
+.flaticon-cloud23:before {
+	content: "\e00c";
+}
+.flaticon-cloud25:before {
+	content: "\e00d";
+}
+.flaticon-cloud28:before {
+	content: "\e00e";
+}
+.flaticon-cloud29:before {
+	content: "\e00f";
+}
+.flaticon-cloud30:before {
+	content: "\e010";
+}
+.flaticon-cloud31:before {
+	content: "\e011";
+}
+.flaticon-cloud32:before {
+	content: "\e012";
+}
+.flaticon-cloud33:before {
+	content: "\e013";
+}
+.flaticon-cloud34:before {
+	content: "\e014";
+}
+.flaticon-cloud35:before {
+	content: "\e015";
+}
+.flaticon-clouds1:before {
+	content: "\e016";
+}
+.flaticon-clouds2:before {
+	content: "\e017";
+}
+.flaticon-cloudy1:before {
+	content: "\e018";
+}
+.flaticon-cloudy2:before {
+	content: "\e019";
+}
+.flaticon-cold5:before {
+	content: "\e01a";
+}
+.flaticon-cold7:before {
+	content: "\e01b";
+}
+.flaticon-compass10:before {
+	content: "\e01c";
+}
+.flaticon-compass11:before {
+	content: "\e01d";
+}
+.flaticon-contrast4:before {
+	content: "\e01e";
+}
+.flaticon-crescent1:before {
+	content: "\e01f";
+}
+.flaticon-crescent2:before {
+	content: "\e020";
+}
+.flaticon-crescent4:before {
+	content: "\e021";
+}
+.flaticon-crescent5:before {
+	content: "\e022";
+}
+.flaticon-crescent6:before {
+	content: "\e023";
+}
+.flaticon-crescent7:before {
+	content: "\e024";
+}
+.flaticon-crescent8:before {
+	content: "\e025";
+}
+.flaticon-dark14:before {
+	content: "\e026";
+}
+.flaticon-dark20:before {
+	content: "\e027";
+}
+.flaticon-dark26:before {
+	content: "\e028";
+}
+.flaticon-dawn:before {
+	content: "\e029";
+}
+.flaticon-download14:before {
+	content: "\e02a";
+}
+.flaticon-drop4:before {
+	content: "\e02b";
+}
+.flaticon-electric1:before {
+	content: "\e02c";
+}
+.flaticon-empty6:before {
+	content: "\e02d";
+}
+.flaticon-fahrenheit:before {
+	content: "\e02e";
+}
+.flaticon-full10:before {
+	content: "\e02f";
+}
+.flaticon-half8:before {
+	content: "\e030";
+}
+.flaticon-hidden2:before {
+	content: "\e031";
+}
+.flaticon-hot19:before {
+	content: "\e032";
+}
+.flaticon-internet4:before {
+	content: "\e033";
+}
+.flaticon-lightning:before {
+	content: "\e034";
+}
+.flaticon-low5:before {
+	content: "\e035";
+}
+.flaticon-minus5:before {
+	content: "\e036";
+}
+.flaticon-moon6:before {
+	content: "\e037";
+}
+.flaticon-more1:before {
+	content: "\e038";
+}
+.flaticon-needle:before {
+	content: "\e039";
+}
+.flaticon-night1:before {
+	content: "\e03a";
+}
+.flaticon-night2:before {
+	content: "\e03b";
+}
+.flaticon-night3:before {
+	content: "\e03c";
+}
+.flaticon-night4:before {
+	content: "\e03d";
+}
+.flaticon-night5:before {
+	content: "\e03e";
+}
+.flaticon-night6:before {
+	content: "\e03f";
+}
+.flaticon-no7:before {
+	content: "\e040";
+}
+.flaticon-play11:before {
+	content: "\e041";
+}
+.flaticon-printer11:before {
+	content: "\e042";
+}
+.flaticon-pronostic1:before {
+	content: "\e043";
+}
+.flaticon-pronostic:before {
+	content: "\e044";
+}
+.flaticon-rain4:before {
+	content: "\e045";
+}
+.flaticon-rain5:before {
+	content: "\e046";
+}
+.flaticon-rain6:before {
+	content: "\e047";
+}
+.flaticon-rainbow:before {
+	content: "\e048";
+}
+.flaticon-rainy:before {
+	content: "\e049";
+}
+.flaticon-rotate1:before {
+	content: "\e04a";
+}
+.flaticon-round:before {
+	content: "\e04b";
+}
+.flaticon-sign2:before {
+	content: "\e04c";
+}
+.flaticon-simple33:before {
+	content: "\e04d";
+}
+.flaticon-sky:before {
+	content: "\e04e";
+}
+.flaticon-snow2:before {
+	content: "\e04f";
+}
+.flaticon-snow3:before {
+	content: "\e050";
+}
+.flaticon-snow4:before {
+	content: "\e051";
+}
+.flaticon-snowing2:before {
+	content: "\e052";
+}
+.flaticon-snowing3:before {
+	content: "\e053";
+}
+.flaticon-snowy:before {
+	content: "\e054";
+}
+.flaticon-stars1:before {
+	content: "\e055";
+}
+.flaticon-sun5:before {
+	content: "\e056";
+}
+.flaticon-sun7:before {
+	content: "\e057";
+}
+.flaticon-sun8:before {
+	content: "\e058";
+}
+.flaticon-sun9:before {
+	content: "\e059";
+}
+.flaticon-sunny:before {
+	content: "\e05a";
+}
+.flaticon-sunrise:before {
+	content: "\e05b";
+}
+.flaticon-sunset:before {
+	content: "\e05c";
+}
+.flaticon-temperature1:before {
+	content: "\e05d";
+}
+.flaticon-temperature:before {
+	content: "\e05e";
+}
+.flaticon-thermometer4:before {
+	content: "\e05f";
+}
+.flaticon-turbine:before {
+	content: "\e060";
+}
+.flaticon-turn5:before {
+	content: "\e061";
+}
+.flaticon-twister:before {
+	content: "\e062";
+}
+.flaticon-update1:before {
+	content: "\e063";
+}
+.flaticon-warning10:before {
+	content: "\e064";
+}
+.flaticon-water9:before {
+	content: "\e065";
+}
+.flaticon-waterdrop:before {
+	content: "\e066";
+}
+.flaticon-weather10:before {
+	content: "\e067";
+}
+.flaticon-weather11:before {
+	content: "\e068";
+}
+.flaticon-weather12:before {
+	content: "\e069";
+}
+.flaticon-wind2:before {
+	content: "\e06a";
+}
+.flaticon-wind3:before {
+	content: "\e06b";
+}
+.flaticon-wind4:before {
+	content: "\e06c";
+}
+.flaticon-winds:before {
+	content: "\e06d";
+}
+.flaticon-windy2:before {
+	content: "\e06e";
+}
+.flaticon-winter1:before {
+	content: "\e06f";
+}

@@ -1,0 +1,271 @@
+{
+  "uuid": "606859d3-0af3-44b7-a63f-17c36e61b26a",
+  "shortName": "weather-face-plus",
+  "longName": "weather-face-plus",
+  "companyName": "Dogan",
+  "versionCode": 1,
+  "versionLabel": "1.0",
+  "watchapp": {
+    "watchface": false
+  },
+ "appKeys": {
+    "city": 2,
+    "temperature": 1,
+    "icon": 0
+  },
+  "resources": {
+    "media": [
+      {
+        "type": "png",
+        "name": "IMAGE_BACKGROUND",
+        "file": "img/brown_background.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_BLUETOOTH",
+        "file": "img/bluetooth9x9.png"
+      },
+
+
+
+      {
+        "type": "png",
+        "name": "IMAGE_16_EMPTY",
+        "file": "img/flaticon/cumulus/16/empty.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_32_UPDATE",
+        "file": "img/flaticon/cumulus/32/rotate1.png"
+      },
+
+
+      {
+        "type": "png",
+        "name": "IMAGE_16_01d",
+        "file": "img/flaticon/cumulus/16/clear3.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_16_01n",
+        "file": "img/flaticon/cumulus/16/night2.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_16_02d",
+        "file": "img/flaticon/cumulus/16/cloudy1.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_16_02n",
+        "file": "img/flaticon/cumulus/16/crescent2.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_16_03d",
+        "file": "img/flaticon/cumulus/16/simple33.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_16_03n",
+        "file": "img/flaticon/cumulus/16/simple33.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_16_04d",
+        "file": "img/flaticon/cumulus/16/alert3.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_16_04n",
+        "file": "img/flaticon/cumulus/16/alert3.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_16_09d",
+        "file": "img/flaticon/cumulus/16/rain4.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_16_09n",
+        "file": "img/flaticon/cumulus/16/rain4.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_16_10d",
+        "file": "img/flaticon/cumulus/16/sun8.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_16_10n",
+        "file": "img/flaticon/cumulus/16/rainy.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_16_11d",
+        "file": "img/flaticon/cumulus/16/cloud30.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_16_11n",
+        "file": "img/flaticon/cumulus/16/cloud30.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_16_13d",
+        "file": "img/flaticon/cumulus/16/water9.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_16_13n",
+        "file": "img/flaticon/cumulus/16/water9.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_16_50d",
+        "file": "img/flaticon/cumulus/16/cloud29.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_16_50n",
+        "file": "img/flaticon/cumulus/16/cloud29.png"
+      },
+
+
+
+      {
+        "type": "png",
+        "name": "IMAGE_32_01d",
+        "file": "img/flaticon/cumulus/32/clear3.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_32_01n",
+        "file": "img/flaticon/cumulus/32/night2.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_32_02d",
+        "file": "img/flaticon/cumulus/32/cloudy1.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_32_02n",
+        "file": "img/flaticon/cumulus/32/crescent2.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_32_03d",
+        "file": "img/flaticon/cumulus/32/simple33.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_32_03n",
+        "file": "img/flaticon/cumulus/32/simple33.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_32_04d",
+        "file": "img/flaticon/cumulus/32/alert3.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_32_04n",
+        "file": "img/flaticon/cumulus/32/alert3.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_32_09d",
+        "file": "img/flaticon/cumulus/32/rain4.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_32_09n",
+        "file": "img/flaticon/cumulus/32/rain4.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_32_10d",
+        "file": "img/flaticon/cumulus/32/sun8.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_32_10n",
+        "file": "img/flaticon/cumulus/32/rainy.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_32_11d",
+        "file": "img/flaticon/cumulus/32/cloud30.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_32_11n",
+        "file": "img/flaticon/cumulus/32/cloud30.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_32_13d",
+        "file": "img/flaticon/cumulus/32/water9.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_32_13n",
+        "file": "img/flaticon/cumulus/32/water9.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_32_50d",
+        "file": "img/flaticon/cumulus/32/cloud29.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_32_50n",
+        "file": "img/flaticon/cumulus/32/cloud29.png"
+      },
+
+
+
+      {
+        "type": "png",
+        "name": "IMAGE_BAT_CHARGING",
+        "file": "img/battery_icons/charging.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_BAT_EMPTY",
+        "file": "img/battery_icons/empty.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_BAT_2",
+        "file": "img/battery_icons/charge2.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_BAT_3",
+        "file": "img/battery_icons/charge3.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_BAT_4",
+        "file": "img/battery_icons/charge4.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_BAT_5",
+        "file": "img/battery_icons/charge5.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_BAT_6",
+        "file": "img/battery_icons/charge6.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_BAT_FULL",
+        "file": "img/battery_icons/FULL.png"
+      }
+    ]
+  }
+}

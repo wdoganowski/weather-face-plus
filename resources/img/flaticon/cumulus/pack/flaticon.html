@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flaticon WebFont</title>
+    <link rel="stylesheet" type="text/css" href="flaticon.css">
+    <meta charset="UTF-8">
+    <style>
+    body {
+        font-family: sans-serif;
+        line-height: 1.5;
+        font-size: 16px;
+        padding: 20px;
+        color:#333;
+    }
+    * {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+        font-family: Flaticon;
+        font-size: 30px;
+        font-style: normal;
+        margin-left: 20px;
+        color: #333;
+    }
+    .image p {
+		font-size: 12px;
+		margin: 0px;
+		clear: none;
+		width: 300px;
+		line-height: 40px;
+	}
+    .text {
+        float: left;
+        font-size:14px;
+        margin-top: 15px;
+    }
+    .text ul {
+        margin-left:0px;
+        color:#111;
+        margin-bottom:20px;
+    }
+    .text .ex {
+        font-size:12px;
+        color:#666;
+        margin-left:35px;
+        display:block;
+    }
+    .text ul li {
+        margin-top:10px;
+        list-style:none;
+    }
+    .num {
+        background:#66A523;
+        color:#fff;
+        border-radius:20px;
+        padding:1px;
+        display:inline-block;
+        width:22px;
+        height:22px;
+        text-align:center;
+        margin-right: 5px;
+    }
+    .text ul strong {
+        font-weight:normal;
+        color:#000;
+    }
+    .image {
+        width: 280px;
+        float: left;
+        margin-bottom: 15px;
+        margin-right: 30px;
+    }
+    #glyphs {
+        clear: both;
+    }
+    .image p:nth-child(even) i {
+        clear: none;
+    }
+    .glyph {
+        display: inline-block;
+        width: 120px;
+        margin: 10px;
+        text-align: center;
+        vertical-align: top;
+        background: #FFF;
+    }
+    .glyph .glyph-icon {
+        padding: 10px;
+        display: block;
+        font-family:"Flaticon";
+        font-size: 64px;
+        line-height: 1;
+    }
+    .glyph .glyph-icon:before {
+        font-size: 64px;
+        color: #666;
+        margin-left: 0;
+    }
+    .class-name {
+        font-size: 12px;
+    }
+    .author-name {
+		font-size: 10px;
+	}
+	a{
+		color: #66A523;
+	}
+    .instructions {
+        font-style:italic;
+        font-size:22px;
+        margin-bottom:10px;
+    }
+    .iconsuse {
+        font-size:22px;
+        font-style:italic;
+        padding-top:20px;
+        margin-top:20px;
+        border-top:1px solid #bbb;
+    }
+    .usetitle {
+        margin-bottom: 10px;
+        font-size: 20px;
+        font-style: italic;
+    }
+    .class-name:last-child {
+        font-size: 10px;
+        color:#888;
+    }
+    .class-name:last-child a {
+        font-size: 10px;
+        color:#555;
+    }
+    .class-name:last-child a:hover {
+        color:#66A523;
+    }
+    .glyph > input {
+        display: block;
+        width: 100px;
+        margin: 5px auto;
+        text-align: center;
+        font-size: 12px;
+        cursor: text;
+    }
+    .glyph > input.icon-input {
+        font-family:"Flaticon";
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    h1.logo {
+        font-size: 40px;
+        letter-spacing: -1px;
+        margin-top: -16px;
+        text-transform: lowercase;
+        border-bottom:1px solid #bbb;
+    }
+    h1.logo strong {
+        font-size: 16px;
+        font-family:sans-serif;
+        font-weight:normal;
+        color:#333;
+    }
+    h1.logo a {
+        color:#34302d;
+        text-decoration: none;
+    }
+    h1.logo a span {
+        color:#66A523;
+    }
+    #footer {
+        padding-top:40px;
+        clear:both;
+        text-align:center;
+    }
+    #footer a {
+        color:#66A523;
+    }
+    textarea {
+		margin: 0px;
+		width: 800px;
+		height: 150px;
+		border: 1px solid #CCC;
+		resize: none;
+		background: #EEE;
+    }
+    .author-link, .attrDiv a{
+    	font-size: 12px;
+    	color: #333;
+    	text-decoration: none;
+    }
+    .external {
+    	display: block;
+    }
+    .attrDiv {
+		font-size: 12px;
+	}
+    .attribution {
+        border-top: 1px solid #AAA;
+        margin: 10px 0;
+        padding-top: 15px;
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="logo">
+            <a href="http://www.flaticon.com">
+                <span>FLAT</span>ICON</a>
+            <strong>Font Demo</strong>
+        </h1>
+    </header>
+
+    <section class="demo">
+        <div class="text">
+
+            <div class="instructions">Instructions:</div>
+
+            <ul>
+                <li>
+                    <p>
+                        <span class="num">1</span>Copy the "Fonts" files and CSS files to your website CSS folder.
+                </li>
+                <li>
+                    <p>
+                        <span class="num">2</span>Add the CSS link to your website source code on header.
+                        <br />
+                        <span class="ex">&lt;head&gt;
+                            <br/>...
+                            <br/>&lt;link rel="stylesheet" type="text/css" href="your_website_domain/css_root/flaticon.css"&gt;
+                            <br/>...
+                            <br/>&lt;/head&gt;</span>
+                </li>
+
+                <li>
+                    <p>
+                        <span class="num">3</span>Use the icon class on "display:inline" elements:
+                        <br />
+                        <span class="ex">Use example: &lt;i class=&quot;flaticon-airplane49&quot;&gt;&lt;/i&gt; or &lt;span class=&quot;flaticon-airplane49&quot;&gt;&lt;/span&gt;</span>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+
+    <section id="glyphs"><div class="glyph">
+		<div class="glyph-icon flaticon-address10"></div>
+		<div class="class-name">.flaticon-address10</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/address-compass_12034">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-address8"></div>
+		<div class="class-name">.flaticon-address8</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/address-wind_12358">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-alert2"></div>
+		<div class="class-name">.flaticon-alert2</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/alert-storm_12229">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-alert3"></div>
+		<div class="class-name">.flaticon-alert3</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/alert-cloud_12541">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-arrow113"></div>
+		<div class="class-name">.flaticon-arrow113</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/needle-pointing-north_12520">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-barometer"></div>
+		<div class="class-name">.flaticon-barometer</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/barometer_12432">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-black30"></div>
+		<div class="class-name">.flaticon-black30</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/black-cloud-rain_12279">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-brolly"></div>
+		<div class="class-name">.flaticon-brolly</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/brolly_12406">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-circular14"></div>
+		<div class="class-name">.flaticon-circular14</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/circular-compass-for-orientation_12448">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-clear3"></div>
+		<div class="class-name">.flaticon-clear3</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/clear-sun_12205">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cloud15"></div>
+		<div class="class-name">.flaticon-cloud15</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cloud-snow_12016">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cloud22"></div>
+		<div class="class-name">.flaticon-cloud22</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cloud-sun-beam_12057">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cloud23"></div>
+		<div class="class-name">.flaticon-cloud23</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cloud-sun-rain_12103">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cloud25"></div>
+		<div class="class-name">.flaticon-cloud25</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cloud-striped_12209">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cloud28"></div>
+		<div class="class-name">.flaticon-cloud28</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cloud-moon-drop_12251">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cloud29"></div>
+		<div class="class-name">.flaticon-cloud29</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cloud-striped_12252">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cloud30"></div>
+		<div class="class-name">.flaticon-cloud30</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cloud-storm-wind_12294">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cloud31"></div>
+		<div class="class-name">.flaticon-cloud31</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cloud-refresh-arrow_12302">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cloud32"></div>
+		<div class="class-name">.flaticon-cloud32</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cloud-upload-internet_12313">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cloud33"></div>
+		<div class="class-name">.flaticon-cloud33</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cloud-snow-night_12328">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cloud34"></div>
+		<div class="class-name">.flaticon-cloud34</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cloud-black_12546">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cloud35"></div>
+		<div class="class-name">.flaticon-cloud35</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cloudy-with-a-bit-rain_13000">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-clouds1"></div>
+		<div class="class-name">.flaticon-clouds1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/clouds-group_12110">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-clouds2"></div>
+		<div class="class-name">.flaticon-clouds2</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/clouds-rain-storm_12295">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cloudy1"></div>
+		<div class="class-name">.flaticon-cloudy1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cloudy-day-weather-pronostic_12414">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cloudy2"></div>
+		<div class="class-name">.flaticon-cloudy2</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cloudy-night_12455">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cold5"></div>
+		<div class="class-name">.flaticon-cold5</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cold-temperature_12524">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cold7"></div>
+		<div class="class-name">.flaticon-cold7</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cold-night_13042">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-compass10"></div>
+		<div class="class-name">.flaticon-compass10</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/compass-west-north_12258">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-compass11"></div>
+		<div class="class-name">.flaticon-compass11</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/compass-needle-west_12283">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-contrast4"></div>
+		<div class="class-name">.flaticon-contrast4</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/contrast-configuration-button_12424">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-crescent1"></div>
+		<div class="class-name">.flaticon-crescent1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/crescent-moon-space_12036">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-crescent2"></div>
+		<div class="class-name">.flaticon-crescent2</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/crescent-moon-hiding-behind-a-cloud_12164">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-crescent4"></div>
+		<div class="class-name">.flaticon-crescent4</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/crescent-moon_12244">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-crescent5"></div>
+		<div class="class-name">.flaticon-crescent5</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/crescent-eclipse-night_12254">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-crescent6"></div>
+		<div class="class-name">.flaticon-crescent6</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/crescent-moon-outlined-phase-shape_12465">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-crescent7"></div>
+		<div class="class-name">.flaticon-crescent7</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/crescent-moon-shape_12474">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-crescent8"></div>
+		<div class="class-name">.flaticon-crescent8</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/crescent-line-arrow_13041">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-dark14"></div>
+		<div class="class-name">.flaticon-dark14</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/dark-sunglasses_12410">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-dark20"></div>
+		<div class="class-name">.flaticon-dark20</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/dark-ray_12089">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-dark26"></div>
+		<div class="class-name">.flaticon-dark26</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/dark-sun_12235">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-dawn"></div>
+		<div class="class-name">.flaticon-dawn</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/dawn-sun-blunting_13019">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-download14"></div>
+		<div class="class-name">.flaticon-download14</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/download-from-internet_12436">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-drop4"></div>
+		<div class="class-name">.flaticon-drop4</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/drop-rain_12275">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-electric1"></div>
+		<div class="class-name">.flaticon-electric1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/electric-storm-day_12422">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-empty6"></div>
+		<div class="class-name">.flaticon-empty6</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/empty-thermometer_12540">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-fahrenheit"></div>
+		<div class="class-name">.flaticon-fahrenheit</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/fahrenheit_12521">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-full10"></div>
+		<div class="class-name">.flaticon-full10</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/full-moon_12377">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-half8"></div>
+		<div class="class-name">.flaticon-half8</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/half-moon-phase_12381">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-hidden2"></div>
+		<div class="class-name">.flaticon-hidden2</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/hidden-sun_12489">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-hot19"></div>
+		<div class="class-name">.flaticon-hot19</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/hot-thermometer_12233">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-internet4"></div>
+		<div class="class-name">.flaticon-internet4</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/striped-cloud_12158">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-lightning"></div>
+		<div class="class-name">.flaticon-lightning</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/lightning-bolt-storm-pronostic_12374">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-low5"></div>
+		<div class="class-name">.flaticon-low5</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/low-barometric-pressure_12449">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-minus5"></div>
+		<div class="class-name">.flaticon-minus5</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/minus-symbol-inside-a-cloud_12388">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-moon6"></div>
+		<div class="class-name">.flaticon-moon6</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/moon-stars-night_12300">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-more1"></div>
+		<div class="class-name">.flaticon-more1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/more-cloudy-meteorology-pronostic_12171">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-needle"></div>
+		<div class="class-name">.flaticon-needle</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/needle-compass_12339">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-night1"></div>
+		<div class="class-name">.flaticon-night1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/night-dark_12280">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-night2"></div>
+		<div class="class-name">.flaticon-night2</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/starry-night_12360">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-night3"></div>
+		<div class="class-name">.flaticon-night3</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/night-snows-cold_12514">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-night4"></div>
+		<div class="class-name">.flaticon-night4</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/night-snow_12519">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-night5"></div>
+		<div class="class-name">.flaticon-night5</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/night-storm_12536">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-night6"></div>
+		<div class="class-name">.flaticon-night6</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/night-rain_12542">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-no7"></div>
+		<div class="class-name">.flaticon-no7</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/no-rain_12191">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-play11"></div>
+		<div class="class-name">.flaticon-play11</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/play-round_12031">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-printer11"></div>
+		<div class="class-name">.flaticon-printer11</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/printer-scanner-fax_12022">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-pronostic1"></div>
+		<div class="class-name">.flaticon-pronostic1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/pronostic-of-electric-storm-at-night_12417">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-pronostic"></div>
+		<div class="class-name">.flaticon-pronostic</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/pronostic-of-a-rainy-day-with-clouds-hiding-the-sun_12175">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-rain4"></div>
+		<div class="class-name">.flaticon-rain4</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/rain-cloud_12184">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-rain5"></div>
+		<div class="class-name">.flaticon-rain5</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/rain-night_12265">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-rain6"></div>
+		<div class="class-name">.flaticon-rain6</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/rain-little_12014">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-rainbow"></div>
+		<div class="class-name">.flaticon-rainbow</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/rainbow-sun_12301">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-rainy"></div>
+		<div class="class-name">.flaticon-rainy</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/rainy-weather-at-night_12163">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-rotate1"></div>
+		<div class="class-name">.flaticon-rotate1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/rotate-circle_12009">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-round"></div>
+		<div class="class-name">.flaticon-round</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/round-outline_12011">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-sign2"></div>
+		<div class="class-name">.flaticon-sign2</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/sign-divide-mathematics_12026">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-simple33"></div>
+		<div class="class-name">.flaticon-simple33</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cloud_12225">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-sky"></div>
+		<div class="class-name">.flaticon-sky</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/sky-cloud_12281">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-snow2"></div>
+		<div class="class-name">.flaticon-snow2</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/snow-weather_12140">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-snow3"></div>
+		<div class="class-name">.flaticon-snow3</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/snow-cloud_12271">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-snow4"></div>
+		<div class="class-name">.flaticon-snow4</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/snow-and-sun_12518">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-snowing2"></div>
+		<div class="class-name">.flaticon-snowing2</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/snowing-wind-cold_12331">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-snowing3"></div>
+		<div class="class-name">.flaticon-snowing3</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/snowing-from-a-snow-cloud_12446">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-snowy"></div>
+		<div class="class-name">.flaticon-snowy</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/snowy-weather-night_12459">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-stars1"></div>
+		<div class="class-name">.flaticon-stars1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/stars-bright_12256">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-sun5"></div>
+		<div class="class-name">.flaticon-sun5</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/sun-glasses-protection_12152">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-sun7"></div>
+		<div class="class-name">.flaticon-sun7</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/sun-hiding-behind-a-cloud_12186">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-sun8"></div>
+		<div class="class-name">.flaticon-sun8</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/sun-and-rain_12260">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-sun9"></div>
+		<div class="class-name">.flaticon-sun9</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/sun-eclipse_12274">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-sunny"></div>
+		<div class="class-name">.flaticon-sunny</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/sunny-weather-symbol_12138">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-sunrise"></div>
+		<div class="class-name">.flaticon-sunrise</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/sunrise-hour_13002">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-sunset"></div>
+		<div class="class-name">.flaticon-sunset</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/sunset-hour-symbols_12157">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-temperature1"></div>
+		<div class="class-name">.flaticon-temperature1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/temperature-scale_12547">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-temperature"></div>
+		<div class="class-name">.flaticon-temperature</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/temperature-degrees_12240">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-thermometer4"></div>
+		<div class="class-name">.flaticon-thermometer4</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/thermometer-heat-cold_12335">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-turbine"></div>
+		<div class="class-name">.flaticon-turbine</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/turbine-wind_12182">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-turn5"></div>
+		<div class="class-name">.flaticon-turn5</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/turn-right-circle_12025">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-twister"></div>
+		<div class="class-name">.flaticon-twister</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/twister-sky-wind_12318">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-update1"></div>
+		<div class="class-name">.flaticon-update1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/update-cloud_12528">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-warning10"></div>
+		<div class="class-name">.flaticon-warning10</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/warning-triangle-sign-with-exclamation-symbol-inside_12483">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-water9"></div>
+		<div class="class-name">.flaticon-water9</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/water-cloud-snows_12515">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-waterdrop"></div>
+		<div class="class-name">.flaticon-waterdrop</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/waterdrop-shape_12485">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-weather10"></div>
+		<div class="class-name">.flaticon-weather10</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/weather-symbol-of-partial-sunny-and-rainny-day_12123">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-weather11"></div>
+		<div class="class-name">.flaticon-weather11</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/weather-tool_12368">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-weather12"></div>
+		<div class="class-name">.flaticon-weather12</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/weather-pronostic-for-cloudy-day-and-rain_12423">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-wind2"></div>
+		<div class="class-name">.flaticon-wind2</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/wind-turbine_12090">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-wind3"></div>
+		<div class="class-name">.flaticon-wind3</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/wind-direction-tool_12488">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-wind4"></div>
+		<div class="class-name">.flaticon-wind4</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/wind-direction-from-north-to-south_13020">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-winds"></div>
+		<div class="class-name">.flaticon-winds</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/winds-and-clouds-meteorology-pronostic_12391">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-windy2"></div>
+		<div class="class-name">.flaticon-windy2</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/windy-day_12012">Yannick</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-winter1"></div>
+		<div class="class-name">.flaticon-winter1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/winter-snow_12363">Yannick</a></div></div></section>
+
+<section class="attribution">
+
+	<div class="usetitle">License and attribution:</div><div class="attrDiv">Font generated by <a href="http://www.flaticon.com">flaticon.com</a>
+ under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY</a>. The authors are: <a href="http://yanlu.de">Yannick</a>.</div><div class="usetitle">Copy the Attribution License:</div>
+
+<textarea onclick="this.focus();this.select();">Font generated by &lt;a href=&quot;http://www.flaticon.com&quot;&gt;flaticon.com&lt;/a&gt;
+ under &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;CC BY&lt;/a&gt;. The authors are: &lt;a href=&quot;http://yanlu.de&quot;&gt;Yannick&lt;/a&gt;.</textarea>
+
+</section>
+
+<section class="iconsuse">
+    	<div class="usetitle">Examples:</div>
+		<div class="image"><p>&lt;i class=&quot;flaticon-address10&quot;&gt;&lt;/i&gt; <i class="flaticon-address10"></i></p><p>&lt;i class=&quot;flaticon-address8&quot;&gt;&lt;/i&gt; <i class="flaticon-address8"></i></p><p>&lt;i class=&quot;flaticon-alert2&quot;&gt;&lt;/i&gt; <i class="flaticon-alert2"></i></p><p>&lt;i class=&quot;flaticon-alert3&quot;&gt;&lt;/i&gt; <i class="flaticon-alert3"></i></p><p>&lt;i class=&quot;flaticon-arrow113&quot;&gt;&lt;/i&gt; <i class="flaticon-arrow113"></i></p></div><div class="image"><p>&lt;span class=&quot;flaticon-barometer&quot;&gt;&lt;/span&gt; <span class="flaticon-barometer"></span></p><p>&lt;span class=&quot;flaticon-black30&quot;&gt;&lt;/span&gt; <span class="flaticon-black30"></span></p><p>&lt;span class=&quot;flaticon-brolly&quot;&gt;&lt;/span&gt; <span class="flaticon-brolly"></span></p><p>&lt;span class=&quot;flaticon-circular14&quot;&gt;&lt;/span&gt; <span class="flaticon-circular14"></span></p><p>&lt;span class=&quot;flaticon-clear3&quot;&gt;&lt;/span&gt; <span class="flaticon-clear3"></span></p></div><div class="image"><p>&lt;span class=&quot;flaticon-cloud15&quot;&gt;&lt;/span&gt; <span class="flaticon-cloud15"></span></p><p>&lt;i class=&quot;flaticon-cloud22&quot;&gt;&lt;/i&gt; <i class="flaticon-cloud22"></i></p><p>&lt;i class=&quot;flaticon-cloud23&quot;&gt;&lt;/i&gt; <i class="flaticon-cloud23"></i></p><p>&lt;i class=&quot;flaticon-cloud25&quot;&gt;&lt;/i&gt; <i class="flaticon-cloud25"></i></p><p>&lt;i class=&quot;flaticon-cloud28&quot;&gt;&lt;/i&gt; <i class="flaticon-cloud28"></i></p></div><div class="image"><p>&lt;span class=&quot;flaticon-cloud29&quot;&gt;&lt;/span&gt; <span class="flaticon-cloud29"></span></p><p>&lt;span class=&quot;flaticon-cloud30&quot;&gt;&lt;/span&gt; <span class="flaticon-cloud30"></span></p><p>&lt;span class=&quot;flaticon-cloud31&quot;&gt;&lt;/span&gt; <span class="flaticon-cloud31"></span></p><p>&lt;span class=&quot;flaticon-cloud32&quot;&gt;&lt;/span&gt; <span class="flaticon-cloud32"></span></p><p>&lt;span class=&quot;flaticon-cloud33&quot;&gt;&lt;/span&gt; <span class="flaticon-cloud33"></span></p></div><div class="image"></div>
+</section>
+<div id="footer">
+    <div>Generated by <a href="http://www.flaticon.com">flaticon.com</a>
+    </div>
+</div>
+	</body>
+</html>
