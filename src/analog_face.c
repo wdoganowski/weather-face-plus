@@ -157,7 +157,7 @@ void analogface_init(Window *window) {
   minute_arrow = gpath_create(&MINUTE_HAND_POINTS);
   hour_arrow = gpath_create(&HOUR_HAND_POINTS);
 
-  Layer *window_layer = window_get_root_layer(window);
+  //Layer *window_layer = window_get_root_layer(window);
   // GRect bounds = layer_get_bounds(window_layer);
   const GPoint center = {144 / 2, 168 / 2}; //grect_center_point(&bounds);
   gpath_move_to(minute_arrow, center);
