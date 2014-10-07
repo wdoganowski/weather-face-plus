@@ -3,8 +3,8 @@
   "shortName": "Weather+",
   "longName": "Weather face+",
   "companyName": "Dogan",
-  "versionCode": 1.1,
-  "versionLabel": "1.1",
+  "versionCode": 1.2,
+  "versionLabel": "1.2",
   "capabilities": ["location"],
   "watchapp": {
     "watchface": true
@@ -12,12 +12,13 @@
  "appKeys": {
     "icon": 0,
     "temperature": 1,
-    "city": 2,
-    "description": 3,
-    "sunrise": 4,
-    "sunset": 5,
-    "remaining": 6,
-    "dt": 7
+    "temperature_hid": 2,
+    "city": 3,
+    "description": 4,
+    "sunrise": 5,
+    "sunset": 6,
+    "remaining": 7,
+    "dt": 8
   },
   "resources": {
     "media": [

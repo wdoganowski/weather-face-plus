@@ -45,6 +45,7 @@ function fetchWeather(latitude, longitude) {
           Pebble.sendAppMessage({
             "icon":icon,
             "temperature":temperature + "\u00B0C",
+            "temperature_hid":temperature + "\u00B0C", // We need two buffers as we display the temperature on two screens 
             "city":city,
             "description":description,
             "sunrise": sunrise,

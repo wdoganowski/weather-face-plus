@@ -106,12 +106,13 @@ uint32_t find_icon_resource(const WeatherIcon* icons, const char* icon) {
 enum WeatherKey {
   WEATHER_ICON_KEY = 0x0,         // TUPLE_CSTRING
   WEATHER_TEMPERATURE_KEY = 0x1,  // TUPLE_CSTRING
-  WEATHER_CITY_KEY = 0x2,         // TUPLE_CSTRING
-  WEATHER_DESC_KEY = 0x3,         // TUPLE_CSTRING
-  WEATHER_SUNRISE_KEY = 0x4,
-  WEATHER_SUNSET_KEY  = 0x5,
-  WEATHER_REMAINING_KEY = 0x6,
-  WEATHER_DT_KEY = 0x7,
+  WEATHER_TEMPERATURE_HID_KEY = 0x2,
+  WEATHER_CITY_KEY = 0x3,         // TUPLE_CSTRING
+  WEATHER_DESC_KEY = 0x4,         // TUPLE_CSTRING
+  WEATHER_SUNRISE_KEY = 0x5,
+  WEATHER_SUNSET_KEY  = 0x6,
+  WEATHER_REMAINING_KEY = 0x7,
+  WEATHER_DT_KEY = 0x8,
 };
 
 static void sync_error_callback(DictionaryResult dict_error, AppMessageResult app_message_error, void *context) {
@@ -147,6 +148,10 @@ static void sync_tuple_changed_callback(const uint32_t key, const Tuple* new_tup
         //APP_LOG(APP_LOG_LEVEL_DEBUG, "Update time %s", time_str);
 
         text_layer_set_text(temperature_layer, new_tuple->value->cstring);
+      }
+      break;
+
+    case WEATHER_TEMPERATURE_HID_KEY: {
         text_layer_set_text(hidden_temperature_layer, new_tuple->value->cstring);
       }
       break;
@@ -317,6 +322,7 @@ void weather_window_load(Window *window) {
   Tuplet initial_values[] = {
     TupletCString(WEATHER_ICON_KEY, ""),
     TupletCString(WEATHER_TEMPERATURE_KEY, ""),
+    TupletCString(WEATHER_TEMPERATURE_HID_KEY, ""),
     TupletCString(WEATHER_CITY_KEY, ""),
     TupletCString(WEATHER_DESC_KEY, ""),
     TupletCString(WEATHER_SUNRISE_KEY, ""),
@@ -371,14 +377,23 @@ void hide_window_handler(void* data) {
 void accel_tap_handler(AccelAxisType axis, int32_t direction) {
   // Process tap on ACCEL_AXIS_X, ACCEL_AXIS_Y or ACCEL_AXIS_Z
   // Direction is 1 or -1
-  if (layer_get_hidden(hidden_bg_layer)) {
-    send_cmd();
-    layer_set_hidden(hidden_bg_layer, false);
-    hide_window_timer = app_timer_register(10*1000 /*10s*/, hide_window_handler, NULL);
-  } else {
-    if (hide_window_timer) app_timer_cancel(hide_window_timer);
-    hide_window_timer = NULL;
-    layer_set_hidden(hidden_bg_layer, true);
+  //APP_LOG(APP_LOG_LEVEL_DEBUG, "Accelerometer %s %ld", (axis==ACCEL_AXIS_X)?"X":(axis==ACCEL_AXIS_Y)?"Y":"Z", direction);
+
+  if (axis == ACCEL_AXIS_X) {
+    if (layer_get_hidden(hidden_bg_layer)) {
+      // If the hidden screen is not displayed yet
+      layer_set_hidden(hidden_bg_layer, false);
+      hide_window_timer = app_timer_register(10 * 1000 /*10s*/, hide_window_handler, NULL);
+    } else {
+      /*if (hide_window_timer) app_timer_cancel(hide_window_timer);
+      hide_window_timer = NULL;
+      layer_set_hidden(hidden_bg_layer, true);*/
+      
+      // If we have the hidden screen already displayed
+      if (hide_window_timer) app_timer_reschedule(hide_window_timer, 20 * 1000); // Set the timeout to 20 sec to wait for the update
+      else hide_window_timer = app_timer_register(20 * 1000 /*10s*/, hide_window_handler, NULL);
+      send_cmd(); // get updated data
+    }
   }
 }
 
