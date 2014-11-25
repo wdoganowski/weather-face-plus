@@ -1,6 +1,6 @@
 #include "pebble.h"
 
-#define DEBUG_ON
+#define DEBUG_OFF
 #include "debug.h"
 
 #include "settings.h"
@@ -377,9 +377,9 @@ void hide_window_handler(void* data) {
 void accel_tap_handler(AccelAxisType axis, int32_t direction) {
   // Process tap on ACCEL_AXIS_X, ACCEL_AXIS_Y or ACCEL_AXIS_Z
   // Direction is 1 or -1
-  //APP_LOG(APP_LOG_LEVEL_DEBUG, "Accelerometer %s %ld", (axis==ACCEL_AXIS_X)?"X":(axis==ACCEL_AXIS_Y)?"Y":"Z", direction);
+  APP_LOG(APP_LOG_LEVEL_DEBUG, "Accelerometer %s %ld", (axis==ACCEL_AXIS_X)?"X":(axis==ACCEL_AXIS_Y)?"Y":"Z", direction);
 
-  if (axis == ACCEL_AXIS_X) {
+  if (axis == ACCEL_AXIS_Y) {
     if (layer_get_hidden(hidden_bg_layer)) {
       // If the hidden screen is not displayed yet
       layer_set_hidden(hidden_bg_layer, false);

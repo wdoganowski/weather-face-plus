@@ -3,9 +3,9 @@
   "shortName": "Weather+",
   "longName": "Weather face+",
   "companyName": "Dogan",
-  "versionCode": 1.2,
-  "versionLabel": "1.2",
-  "capabilities": ["location"],
+  "versionCode": 1.3,
+  "versionLabel": "1.3",
+  "capabilities": ["location", "configurable"],
   "watchapp": {
     "watchface": true
   },
