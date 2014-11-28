@@ -2,7 +2,7 @@
  * MIT License http://dogan.mit-license.org/
  */
 
- #pragma once
+#pragma once
 
 // Use #define DEBUG_ON to enable debugs
 // Use #define DEBUG_DEEP to enable deep debugs (on almost each call)

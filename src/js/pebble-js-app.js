@@ -1,8 +1,9 @@
 // Configuration
 
-var setPebbleToken = 'AQUJ';
+var setPebbleToken = 'EECF';
 var options = {
-  "1":0 // Temperature C|F
+  "1":0, // Temperature C|F
+  "2":0, // Pivot
 };
 
 // OpenWeather 
@@ -67,7 +68,8 @@ function fetchWeather(latitude, longitude) {
               "sunrise": sunrise,
               "sunset": sunset,
               "remaining": remaining,
-              "dt":dt
+              "dt":dt,
+              "pivot":options["2"],
             });
           } else {
             Pebble.sendAppMessage({
@@ -79,7 +81,8 @@ function fetchWeather(latitude, longitude) {
               "sunrise": sunrise,
               "sunset": sunset,
               "remaining": remaining,
-              "dt":dt
+              "dt":dt,
+              "pivot":options["2"],
             });
           }
         }
@@ -156,7 +159,7 @@ Pebble.addEventListener("webviewclosed", function(e) {
   if ( typeof(e.response) == 'string' && e.response.length > 5 && e.response.charAt(0) == "{" && e.response.slice(-1) == "}" ) {
     options = JSON.parse(decodeURIComponent(e.response));
     //console.log("Options set = " + JSON.stringify(options));
-    window.navigator.geolocation.getCurrentPosition(locationSuccess, locationError, locationOptions); // update temperature
+    window.navigator.geolocation.getCurrentPosition(locationSuccess, locationError, locationOptions); // update watchface
     localStorage.setItem(setPebbleToken, JSON.stringify(options));
   } else {
     //console.log("Cancelled");

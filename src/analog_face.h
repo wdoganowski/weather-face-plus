@@ -10,3 +10,5 @@ void analogface_window_unload(Window *window);
 
 void analogface_init(Window *window);
 void analogface_deinit(void);
+
+void analogface_move_xy_setup(int enabled);

@@ -8,6 +8,11 @@
 #include "analog_face.h"
 #include "weather.h"
 
+#define DEBUG_OFF
+#include "debug.h"
+
+#define HANDS_UPDATE_STEP_MS 50
+
 #ifdef SIMPLE_BACKGROUND
 Layer *simple_bg_layer;
 #else
@@ -21,7 +26,7 @@ char day_buffer[11];
 static GPath *minute_arrow;
 static GPath *hour_arrow;
 static GPath *tick_paths[NUM_CLOCK_TICKS];
-Layer *hands_layer;
+Layer *hands_layer; 
 
 static Window *the_window;
 
@@ -38,10 +43,30 @@ static void bg_update_proc(Layer *layer, GContext *ctx) {
 }
 #endif
 
+static AppTimer *timer = NULL;
+GPoint move_xy/* = (GPoint) { .x = 0, .y = 0 }*/;
+
+static void hands_move_callback(void *data) {
+  AccelData accel = (AccelData) { .x = 0, .y = 0, .z = 0 };
+
+  accel_service_peek(&accel);
+
+  LOG_INFO("x %d y %d z %d", accel.x, accel.y, accel.z);
+  move_xy.x = accel.x / -100;
+  move_xy.y = accel.y / -100;
+
+  layer_mark_dirty(hands_layer);
+
+  timer = app_timer_register(HANDS_UPDATE_STEP_MS, hands_move_callback, NULL);
+}
+
 static void hands_update_proc(Layer *layer, GContext *ctx) {
   GRect bounds = layer_get_bounds(layer);
-  const GPoint center = grect_center_point(&bounds);
+  GPoint center = grect_center_point(&bounds);
   const int16_t secondHandLength = bounds.size.w / 2;
+
+  center.x += move_xy.x;
+  center.y += move_xy.y;
 
   GPoint secondHand;
 
@@ -63,14 +88,16 @@ static void hands_update_proc(Layer *layer, GContext *ctx) {
   gpath_rotate_to(minute_arrow, TRIG_MAX_ANGLE * t->tm_min / 60);
   gpath_draw_filled(ctx, minute_arrow);
   gpath_draw_outline(ctx, minute_arrow);
+  gpath_move_to(minute_arrow, center);
 
   gpath_rotate_to(hour_arrow, (TRIG_MAX_ANGLE * (((t->tm_hour % 12) * 6) + (t->tm_min / 10))) / (12 * 6));
   gpath_draw_filled(ctx, hour_arrow);
   gpath_draw_outline(ctx, hour_arrow);
+  gpath_move_to(hour_arrow, center);
 
   // dot in the middle
   graphics_context_set_fill_color(ctx, GColorBlack);
-  graphics_fill_rect(ctx, GRect(bounds.size.w / 2 - 1, bounds.size.h / 2 - 1, 3, 3), 0, GCornerNone);
+  graphics_fill_rect(ctx, GRect(center.x - 1, center.y - 1, 3, 3), 0, GCornerNone);
 }
 
 static void date_update_proc(Layer *layer, GContext *ctx) {
@@ -93,6 +120,17 @@ static void handle_second_tick(struct tm *tick_time, TimeUnits units_changed) {
 /*
  * Exported
  */
+
+void analogface_move_xy_setup(int enabled) {
+  if (enabled) {
+      timer = app_timer_register(HANDS_UPDATE_STEP_MS, hands_move_callback, NULL);
+  } else {
+      if (timer) app_timer_cancel(timer);
+      timer = NULL;
+      move_xy.x = 0;
+      move_xy.y = 0;
+  }
+}
 
 void analogface_window_load(Window *window) {
   if (!INC_ANALOGFACE) return;
@@ -170,9 +208,16 @@ void analogface_init(Window *window) {
 
   // Seconds handle timer
   tick_timer_service_subscribe(SECOND_UNIT, handle_second_tick);
+
+  // Hands move timer
+  move_xy.x = 0;
+  move_xy.y = 0;
+  // timer = app_timer_register(HANDS_UPDATE_STEP_MS, hands_move_callback, NULL);
 }
 
 void analogface_deinit(void) {
   if (!INC_ANALOGFACE) return;
 
-}
+  if ( minute_arrow ) gpath_destroy( minute_arrow );
+  if ( hour_arrow ) gpath_destroy( hour_arrow )
+;}

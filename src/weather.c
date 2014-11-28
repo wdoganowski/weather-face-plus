@@ -5,6 +5,7 @@
 
 #include "settings.h"
 #include "weather.h"
+#include "analog_face.h"
 
 #define WEATHER_TEMP_LENGTH 6
 
@@ -113,6 +114,7 @@ enum WeatherKey {
   WEATHER_SUNSET_KEY  = 0x6,
   WEATHER_REMAINING_KEY = 0x7,
   WEATHER_DT_KEY = 0x8,
+  SETTING_PIVOT_KEY = 0x9,
 };
 
 static void sync_error_callback(DictionaryResult dict_error, AppMessageResult app_message_error, void *context) {
@@ -185,7 +187,12 @@ static void sync_tuple_changed_callback(const uint32_t key, const Tuple* new_tup
     case WEATHER_DT_KEY: {
         text_layer_set_text(hidden_time_layer, new_tuple->value->cstring);
       }
+      break;
 
+    case SETTING_PIVOT_KEY: {
+        analogface_move_xy_setup(new_tuple->value->uint8);
+      }
+      break;
   }
 }
 
@@ -329,6 +336,7 @@ void weather_window_load(Window *window) {
     TupletCString(WEATHER_SUNSET_KEY, ""),
     TupletCString(WEATHER_REMAINING_KEY, ""),
     TupletCString(WEATHER_DT_KEY, ""),
+    TupletInteger(SETTING_PIVOT_KEY, (uint8_t)0),
   };
 
   app_sync_init(&sync, sync_buffer, sizeof(sync_buffer), initial_values, ARRAY_LENGTH(initial_values),
@@ -396,7 +404,6 @@ void accel_tap_handler(AccelAxisType axis, int32_t direction) {
     }
   }
 }
-
 
 void weather_init(Window *window) {
   if (!INC_WEATHER) return;
